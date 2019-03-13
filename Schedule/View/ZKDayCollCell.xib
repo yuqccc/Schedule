@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ZKDayCollCell">
+            <rect key="frame" x="0.0" y="0.0" width="129" height="184"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="129" height="184"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kx-pS-zus">
+                        <rect key="frame" x="0.0" y="95" width="129" height="87"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.47843137254901957" green="0.49019607843137253" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTs-SY-Zwq">
+                        <rect key="frame" x="0.0" y="8" width="129" height="87"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.094117647058823528" green="0.098039215686274508" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="1kx-pS-zus" secondAttribute="bottom" constant="2" id="9MV-OT-AfS"/>
+                <constraint firstAttribute="trailing" secondItem="iTs-SY-Zwq" secondAttribute="trailing" id="ETl-I0-mr8"/>
+                <constraint firstItem="1kx-pS-zus" firstAttribute="top" secondItem="iTs-SY-Zwq" secondAttribute="bottom" id="LHl-up-SkY"/>
+                <constraint firstItem="iTs-SY-Zwq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Nk2-RD-thx"/>
+                <constraint firstItem="iTs-SY-Zwq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Se2-pN-EHf"/>
+                <constraint firstAttribute="trailing" secondItem="1kx-pS-zus" secondAttribute="trailing" id="U1f-Tu-MB3"/>
+                <constraint firstItem="1kx-pS-zus" firstAttribute="height" secondItem="iTs-SY-Zwq" secondAttribute="height" id="enz-2C-Mea"/>
+                <constraint firstItem="1kx-pS-zus" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mSA-5p-NYK"/>
+            </constraints>
+            <size key="customSize" width="129" height="184"/>
+            <connections>
+                <outlet property="dateLab" destination="1kx-pS-zus" id="R3E-SA-5hJ"/>
+                <outlet property="week" destination="iTs-SY-Zwq" id="f07-pb-hWw"/>
+            </connections>
+            <point key="canvasLocation" x="-224.5" y="-231"/>
+        </collectionViewCell>
+    </objects>
+</document>
